@@ -6,19 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USERKAYX.COM</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body {
+            background-color: Black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Aligns items to the left */
+            margin: 0 auto;
+            max-width: 600px; /* Adjust as needed */
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .links {
+            margin-top: 20px;
+            color: White;
+        }
+        .links a {
+            display: block; /* Makes each link appear on a new line */
+            color: White;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
-<body style="background-color: Black; text-align: center;">
+<body>
     <h1 style="color: White;">USERKAYX.COM</h1>
 
-    <!-- Image -->
-    <img src="kx logo fit transparent white.png" alt="USERKAYX Logo">
+    <!-- Container for image and links -->
+    <div class="container">
+        <!-- Image -->
+        <img src="kx logo fit transparent white.png" alt="USERKAYX Logo">
 
-    <!-- Links -->
-    <div style="margin-top: 20px;">
-        <p><a href="https://userkayx.com/plug" style="color: White;" title="the plug">folder_THE PLUG</a></p>
-        <p><a href="https://userkayx.com/ty" style="color: White;">album_THANK YOU</a></p>
-        <p><a href="https://soundcloud.com/xept-53003535" style="color: White;" target="_blank">soundcloud_ZEPTO</a></p>
+        <!-- Links -->
+        <div class="links">
+            <p><a href="https://userkayx.com/plug" title="the plug">folder_THE PLUG</a></p>
+            <p><a href="https://userkayx.com/ty">album_THANK YOU</a></p>
+            <p><a href="https://soundcloud.com/xept-53003535" target="_blank">soundcloud_ZEPTO</a></p>
+        </div>
     </div>
 </body>
 </html>
