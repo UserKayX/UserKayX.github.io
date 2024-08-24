@@ -15,3 +15,58 @@
 <p></p><a href="https://soundcloud.com/xept-53003535" style="color:White;" target=_blank>soundcloud_ZEPTO</a></p>
 
 </body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Date and Time Clock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: flex-start;  /* Align items to the top */
+            padding: 20px; /* Optional padding for spacing */
+            box-sizing: border-box;
+        }
+        #clock {
+            font-size: 1.5rem;
+            background: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">Loading...</div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const day = now.getDate().toString().padStart(2, '0');
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const year = now.getFullYear();
+
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+
+            const timeString = `${hours.toString().padStart(2, '0')}:${minutes}:${seconds} ${ampm}`;
+            const dateString = `${day}-${month}-${year}`;
+
+            document.getElementById('clock').textContent = `${dateString} ${timeString}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
