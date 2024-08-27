@@ -65,7 +65,7 @@
             hours = hours ? hours : 12;
 
             const timeString = `${hours.toString().padStart(2, '0')}:${minutes}:${seconds} ${ampm}`;
-            const dateString = `${day}-${month}-${year}`;
+            const dateString = `${month} ${day} ${year}`;
 
             document.getElementById('clock').textContent = `${dateString} ${timeString}`;
         }
