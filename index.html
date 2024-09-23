@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Local Disk (UKX:)</title>
-    <style>
-        /* Position the last updated text in the bottom right */
-        #last-updated {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            font-size: 12px;
-            color: gray;
-            font-family: Arial, sans-serif;
-        }
-    </style>
 </head>
 <body>
     <div class="folder">
@@ -105,7 +94,7 @@
             lastUpdatedElement.textContent = `Last updated: ${now.toLocaleDateString('en-US', options)}`;
         }
 
-        // Call the function on page load
+        // Ensure the function runs after the page loads
         window.onload = setLastUpdated;
     </script>
 </body>
