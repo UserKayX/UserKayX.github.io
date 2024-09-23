@@ -72,7 +72,7 @@ body {
 }
 
 /* Specific folder section: Documents folder */
-#documents .file-icon {
+#external .file-icon {
     color: #34a853; /* Custom color for documents */
 }
 
