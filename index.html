@@ -46,6 +46,27 @@
             </div>
         </div>
 
+        <div class="folder-icon" onclick="toggleFiles('sfx')">
+            📁 <span>SFX</span>
+        </div>
+        <div class="files" id="sfx" style="display: none;">
+            <div class="file-icon">
+                🎵 <span>SoundEffect2.mp3</span>
+                <audio controls>
+                    <source src="path/to/SoundEffect2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="file-icon">
+                🎵 <span>SoundEffect3.mp3</span>
+                <audio controls>
+                    <source src="path/to/SoundEffect3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
     <script>
         function toggleFiles(folderId) {
             const folder = document.getElementById(folderId);
