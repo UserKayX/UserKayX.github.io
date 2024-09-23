@@ -71,13 +71,12 @@ body {
     color: #ff6f61; /* Custom color for photos */
 }
 
-/* Specific folder section: Documents folder */
-#external .file-icon {
-    color: #34a853; /* Custom color for documents */
-}
-
 /* Specific folder section: SFX folder */
 #sfx .file-icon {
     color: #fbbc04; /* Custom color for SFX */
 }
 
+/* Specific folder section: External folder */
+#external .file-icon {
+    color: #34a853; /* Custom color for external */
+}
