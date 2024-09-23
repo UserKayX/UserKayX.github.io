@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Local Disk (UKX:)</title>
+    <style>
+        /* Position the last updated text in the bottom right */
+        #last-updated {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: gray;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div class="folder">
@@ -70,13 +81,16 @@
         </div>
     </div>
 
+    <!-- Last updated text -->
+    <div id="last-updated"></div>
+
     <script>
         function toggleFiles(folderId) {
             const folder = document.getElementById(folderId);
             folder.style.display = folder.style.display === 'none' ? 'block' : 'none';
         }
 
-         // Function to set the last updated time
+        // Function to set the last updated time
         function setLastUpdated() {
             const lastUpdatedElement = document.getElementById("last-updated");
             const now = new Date();
