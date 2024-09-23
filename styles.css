@@ -1,45 +1,81 @@
+/* General body styling */
 body {
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
+/* Folder container */
 .folder {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px; /* Space between folder blocks */
 }
 
+/* Styling for folder and file icons */
 .folder-icon, .file-icon {
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .folder-icon:hover, .file-icon:hover {
-    background-color: #e0e0e0;
+    background-color: #e8e8e8; /* Slight hover effect */
 }
 
-.folder-icon span, .file-icon span {
+/* Folder and file icon text styles */
+.folder-icon span, .file-icon span, .file-icon a {
     margin-left: 10px;
     font-weight: bold;
+    text-decoration: none;
+    color: #333;
 }
 
+/* Add hover effect to file links */
+.file-icon a:hover {
+    text-decoration: underline;
+    color: #007BFF; /* Blue on hover */
+}
+
+/* Hidden files when folder is closed */
+.files {
+    display: none;
+    margin-left: 25px; /* Indent files inside folders */
+}
+
+/* Audio player styling */
 .file-icon audio {
     margin-left: 20px;
-    width: 300px;
+    width: 300px; /* Width of audio player */
 }
 
-.files {
-    margin-left: 20px;
+/* Styling for each folder group */
+.folder + .folder {
+    margin-top: 20px; /* Space between folders */
 }
 
-.files:nth-of-type(odd) {
-    margin-bottom: 20px; /* Space between different folder groups */
+/* Specific folder section: NEW folder */
+#new .file-icon {
+    color: #1a73e8; /* Custom color for new folder content */
+}
+
+/* Specific folder section: Photos folder */
+#photos .file-icon {
+    color: #ff6f61; /* Custom color for photos */
+}
+
+/* Specific folder section: Documents folder */
+#documents .file-icon {
+    color: #34a853; /* Custom color for documents */
+}
+
+/* Specific folder section: SFX folder */
+#sfx .file-icon {
+    color: #fbbc04; /* Custom color for SFX */
 }
