@@ -8,18 +8,36 @@
 </head>
 <body>
     <div class="folder">
-        <div class="folder-icon">
+        <div class="folder-icon" onclick="toggleFiles('documents')">
             📁 <span>Documents</span>
         </div>
-        <div class="folder-icon">
+        <div class="files" id="documents">
+            <div class="file-icon">
+                📄 <a href="path/to/Resume.pdf" target="_blank">Resume.pdf</a>
+            </div>
+            <div class="file-icon">
+                📄 <a href="path/to/Report.docx" target="_blank">Report.docx</a>
+            </div>
+        </div>
+
+        <div class="folder-icon" onclick="toggleFiles('photos')">
             📁 <span>Photos</span>
         </div>
-        <div class="file-icon">
-            📄 <span>Resume.pdf</span>
-        </div>
-        <div class="file-icon">
-            📄 <span>Report.docx</span>
+        <div class="files" id="photos" style="display: none;">
+            <div class="file-icon">
+                📄 <a href="path/to/photo1.jpg" target="_blank">Photo1.jpg</a>
+            </div>
+            <div class="file-icon">
+                📄 <a href="path/to/photo2.jpg" target="_blank">Photo2.jpg</a>
+            </div>
         </div>
     </div>
+
+    <script>
+        function toggleFiles(folderId) {
+            const folder = document.getElementById(folderId);
+            folder.style.display = folder.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
