@@ -20,7 +20,8 @@ body {
     border-radius: 5px;
     padding: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -31,7 +32,7 @@ body {
 
 /* Folder and file icon text styles */
 .folder-icon span, .file-icon span, .file-icon a {
-    margin-left: 10px;
+    margin-bottom: 5px; /* Space between name and audio */
     font-weight: bold;
     text-decoration: none;
     color: #333;
@@ -51,8 +52,8 @@ body {
 
 /* Audio player styling */
 .file-icon audio {
-    margin-left: 20px;
-    width: 300px; /* Width of audio player */
+    margin-top: 5px; /* Space above audio player */
+    width: 100%; /* Full width for better responsiveness */
 }
 
 /* Styling for each folder group */
