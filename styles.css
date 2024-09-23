@@ -81,15 +81,14 @@ body {
     color: #fbbc04; /* Custom color for SFX */
 }
 
-.last-updated {
-    position: fixed; /* Fixed position */
-    bottom: 10px; /* 10px from the bottom */
-    right: 10px; /* 10px from the right */
-    text-align: right; /* Align text to the right */
-    font-size: 14px; /* Adjust font size */
-    color: #555; /* Change text color */
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: background color for readability */
-    padding: 5px; /* Optional: padding around the text */
-    border-radius: 5px; /* Optional: rounded corners */
+#last-updated {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background for readability */
+    padding: 5px;
+    border-radius: 5px;
 }
-
