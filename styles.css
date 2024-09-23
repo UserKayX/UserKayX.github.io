@@ -82,7 +82,7 @@ body {
 }
 
 #last-updated {
-    position: fixed;
+    position: static;
     bottom: 10px;
     right: 10px;
     text-align: right;
