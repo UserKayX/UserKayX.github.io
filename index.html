@@ -79,16 +79,6 @@
             const folder = document.getElementById(folderId);
             folder.style.display = folder.style.display === 'none' ? 'block' : 'none';
         }
-
-        // Function to manually set the last updated date by the owner
-        function setLastUpdated() {
-            const lastUpdatedElement = document.getElementById("last-updated");
-            const lastUpdatedDate = "September 23, 2024"; // <-- Manually update this date when the website is changed
-            lastUpdatedElement.textContent = `Last updated by the owner: ${lastUpdatedDate}`;
-        }
-
-        // Call the function on page load
-        window.onload = setLastUpdated;
     </script>
 </body>
 </html>
