@@ -28,4 +28,18 @@ body {
 
 .folder-icon span, .file-icon span {
     margin-left: 10px;
+    font-weight: bold;
+}
+
+.file-icon audio {
+    margin-left: 20px;
+    width: 300px;
+}
+
+.files {
+    margin-left: 20px;
+}
+
+.files:nth-of-type(odd) {
+    margin-bottom: 20px; /* Space between different folder groups */
 }
