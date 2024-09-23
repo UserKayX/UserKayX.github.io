@@ -10,7 +10,7 @@ body {
 .folder {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between folder blocks */
+    gap: 10px; /* Space between folder blocks */
 }
 
 /* Styling for folder and file icons */
